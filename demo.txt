@@ -1,0 +1,238 @@
+psql (10.10 (Ubuntu 10.10-0ubuntu0.18.04.1))
+Type "help" for help.
+
+csc343h-chenka51=> \i runner.txt
+-------------------- Loading schema and data: --------------------
+
+psql:schema.ddl:20: NOTICE:  drop cascades to 42 other objects
+DETAIL:  drop cascades to table vacationschema.guest
+drop cascades to table vacationschema.host
+drop cascades to table vacationschema.property
+drop cascades to type vacationschema.citytype
+drop cascades to table vacationschema.cityproperty
+drop cascades to type vacationschema.watertype
+drop cascades to table vacationschema.waterproperty
+drop cascades to table vacationschema.card
+drop cascades to type vacationschema.week
+drop cascades to table vacationschema.rental
+drop cascades to table vacationschema.price
+drop cascades to table vacationschema.stay
+drop cascades to type vacationschema.score
+drop cascades to table vacationschema.propertyrating
+drop cascades to table vacationschema.propertycomment
+drop cascades to table vacationschema.hostrating
+drop cascades to table vacationschema.q1
+drop cascades to view vacationschema.hot_tub
+drop cascades to view vacationschema.sauna
+drop cascades to view vacationschema.laundry_service
+drop cascades to view vacationschema.daily_cleaning
+drop cascades to view vacationschema.daily_breakfast_delivery
+drop cascades to view vacationschema.concierge_service
+drop cascades to view vacationschema.answer
+drop cascades to table vacationschema.q2
+drop cascades to view vacationschema.guest_capacity
+drop cascades to view vacationschema.below_capacity
+drop cascades to view vacationschema.below_capacity_summary
+drop cascades to view vacationschema.at_capacity
+drop cascades to view vacationschema.at_capacity_summary
+drop cascades to table vacationschema.q3
+drop cascades to view vacationschema.avg_rating
+drop cascades to table vacationschema.q4
+drop cascades to view vacationschema.avg_guest
+drop cascades to view vacationschema.avg_water
+drop cascades to view vacationschema.avg_city
+drop cascades to view vacationschema.avg_other
+drop cascades to table vacationschema.q5
+drop cascades to view vacationschema.all_prices
+drop cascades to view vacationschema.prices_range
+drop cascades to view vacationschema.not_highest
+drop cascades to view vacationschema.with_highest_range
+DROP SCHEMA
+CREATE SCHEMA
+SET
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE DOMAIN
+CREATE TABLE
+CREATE DOMAIN
+CREATE TABLE
+CREATE TABLE
+CREATE DOMAIN
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE DOMAIN
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 6
+INSERT 0 3
+INSERT 0 6
+INSERT 0 1
+INSERT 0 1
+INSERT 0 5
+INSERT 0 5
+INSERT 0 6
+INSERT 0 12
+INSERT 0 9
+INSERT 0 3
+INSERT 0 5
+
+-------------------- Query 1: -----------------------------------
+
+SET
+psql:q1.sql:2: NOTICE:  table "q1" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+psql:q1.sql:13: NOTICE:  view "hot_tub" does not exist, skipping
+DROP VIEW
+psql:q1.sql:14: NOTICE:  view "sauna" does not exist, skipping
+DROP VIEW
+psql:q1.sql:15: NOTICE:  view "laundry_service" does not exist, skipping
+DROP VIEW
+psql:q1.sql:16: NOTICE:  view "daily_cleaning" does not exist, skipping
+DROP VIEW
+psql:q1.sql:17: NOTICE:  view "daily_breakfast_delivery" does not exist, skipping
+DROP VIEW
+psql:q1.sql:18: NOTICE:  view "concierge_service" does not exist, skipping
+DROP VIEW
+psql:q1.sql:19: NOTICE:  view "answer" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+INSERT 0 6
+
+-------------------- Query 2: -----------------------------------
+
+SET
+psql:q2.sql:2: NOTICE:  table "q2" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+psql:q2.sql:20: NOTICE:  view "guest_capacity" does not exist, skipping
+DROP VIEW
+psql:q2.sql:21: NOTICE:  view "below_capacity" does not exist, skipping
+DROP VIEW
+psql:q2.sql:22: NOTICE:  view "below_capacity_summary" does not exist, skipping
+DROP VIEW
+psql:q2.sql:23: NOTICE:  view "at_capacity" does not exist, skipping
+DROP VIEW
+psql:q2.sql:24: NOTICE:  view "at_capacity_summary" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+INSERT 0 2
+
+-------------------- Query 3: -----------------------------------
+
+SET
+psql:q3.sql:2: NOTICE:  table "q3" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+psql:q3.sql:10: NOTICE:  view "avg_rating" does not exist, skipping
+DROP VIEW
+psql:q3.sql:11: NOTICE:  view "not_highest" does not exist, skipping
+DROP VIEW
+psql:q3.sql:12: NOTICE:  view "highest" does not exist, skipping
+DROP VIEW
+psql:q3.sql:13: NOTICE:  view "most_expensive" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+INSERT 0 1
+
+-------------------- Query 4: -----------------------------------
+
+SET
+psql:q4.sql:2: NOTICE:  table "q4" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+psql:q4.sql:18: NOTICE:  view "avg_guest" does not exist, skipping
+DROP VIEW
+psql:q4.sql:19: NOTICE:  view "property_guest" does not exist, skipping
+DROP VIEW
+psql:q4.sql:20: NOTICE:  view "avg_water" does not exist, skipping
+DROP VIEW
+psql:q4.sql:21: NOTICE:  view "avg_city" does not exist, skipping
+DROP VIEW
+psql:q4.sql:22: NOTICE:  view "avg_other" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+INSERT 0 3
+
+-------------------- Query 5: -----------------------------------
+
+SET
+psql:q5.sql:2: NOTICE:  table "q5" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+psql:q5.sql:26: NOTICE:  view "all_prices" does not exist, skipping
+DROP VIEW
+psql:q5.sql:27: NOTICE:  view "prices_range" does not exist, skipping
+DROP VIEW
+psql:q5.sql:28: NOTICE:  drop cascades to 2 other objects
+DETAIL:  drop cascades to view highest
+drop cascades to view most_expensive
+DROP VIEW
+psql:q5.sql:29: NOTICE:  view "with_highest_range" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+INSERT 0 6
+csc343h-chenka51=> select * from q1;
+           type           | number 
+--------------------------+--------
+ daily cleaning           |      3
+ sauna                    |      2
+ hot tub                  |      4
+ concierge service        |      2
+ daily breakfast delivery |      1
+ laundry service          |      2
+(6 rows)
+
+csc343h-chenka51=> select * from q2;
+    capacity    |      rating      | number 
+----------------+------------------+--------
+ at capacity    | 3.83333333333333 |      3
+ below capacity | 1.66666666666667 |      2
+(2 rows)
+
+csc343h-chenka51=> select * from q3;
+     email     |      rating      | price 
+---------------+------------------+-------
+ han@gmail.com | 4.33333333333333 |  1220
+(1 row)
+
+csc343h-chenka51=> select * from q4;
+ type  | extra_guest 
+-------+-------------
+ other |         1.5
+ city  |           2
+ water |           1
+(3 rows)
+
+csc343h-chenka51=> select * from q5;
+  pid  | highest_price | lowest_price | range | highest_range 
+-------+---------------+--------------+-------+---------------
+ 10000 |               |              |       | 
+ 20000 |           600 |          580 |    20 | 
+ 30000 |           750 |          750 |     0 | 
+ 40000 |               |              |       | 
+ 50000 |          1220 |         1000 |   220 | *
+ 60000 |               |              |       | 
+(6 rows)
